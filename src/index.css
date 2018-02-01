@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: grey;
+  background: url('./images/computer.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: 'Roboto', Futura, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+/*============================================*/
+/*==============COMPONENT STYLES==============*/
+/*============================================*/
+
+/*=====================LEAD=====================*/
+
+.lead-body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.lead-header {
+  display: flex;
+  flex: 0.9;
+  /*align-items: flex-end;*/
+  /*justify-content: flex-end;*/
+  margin: auto 0;
+  /*border: 2px solid black;*/
+}
+
+.name {
+  font-size: 60px;
+  font-weight: bold;
+  color: #1B2024;
+  text-shadow: 1px 2px 2px grey;
+  /*border: 2px solid black;*/
+  padding: 0 3% 0 40%;
+  margin: auto 0;
+}
+
+.lead-content {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  flex: 3;
+  /*border: 2px solid black;*/
+}
+
+/*.lead-content div {
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 3% 0 0 3%;
+  color: #1B2024;
+}
+
+.descriptions {
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  width: 50%;
+  color: #1B2024;
+}
+*/
+/*====================MENU====================*/
+.menu {
+  display: flex;
+  flex: 0.1;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  /*border: 2px solid red;*/
+}
+
+.menu-item {
+  display: flex;
+  font-family: 'Ubuntu', Futura, sans-serif;
+  font-weight: bold;
+  background: none;
+  border: none;
+  font-size: 20px;
+  padding: 0 3% 3% 3%;
+  color: white;
+  text-shadow: 2px 2px 1px grey;
+}
+
+.menu-item:hover {
+  font-size: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 1px grey;
+}
