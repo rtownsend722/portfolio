@@ -3,51 +3,70 @@
 }
 
 body {
-  background: grey;
-  background: url('./images/computer.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  /*background: linear-gradient(to right, #EDC7B7, #FCFBE3);*/
+  background-color: white;
   font-family: 'Roboto', Futura, sans-serif;
   font-size: 14px;
   color: white;
 }
 
-/*============================================*/
 /*==============COMPONENT STYLES==============*/
-/*============================================*/
 
 /*=====================LEAD=====================*/
 
 .lead-body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 600px;
 }
 
 .lead-header {
+  background: url('./images/mountain.jpg');
+  background-color: #D1E8E2;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-height: 60%;
   display: flex;
-  flex: 0.9;
-  /*align-items: flex-end;*/
-  /*justify-content: flex-end;*/
+  flex-direction: column;
+  flex: 6;
   margin: auto 0;
   /*border: 2px solid black;*/
+}
+
+
+.lead-image {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  /*border: 2px solid black;*/
+}
+
+.lead-image img {
+  margin-top: 10%;
+  height: 100px;
+  width: 150px;
 }
 
 .name {
   font-size: 60px;
   font-weight: bold;
-  color: #1B2024;
+  /*color: #1B2024;*/
+  font-color: white;
   text-shadow: 1px 2px 2px grey;
-  /*border: 2px solid black;*/
-  padding: 0 3% 0 40%;
-  margin: auto 0;
+  margin: 5% auto 10% auto;
 }
 
 .lead-content {
   display: flex;
-  justify-content: flex-end;
-  text-align: right;
-  flex: 3;
+  justify-content: center;
+  }
+
+.lead-image {
+  /*display: flex;*/
+  /*justify-content: center;*/
   /*border: 2px solid black;*/
 }
 
@@ -70,7 +89,7 @@ body {
 /*====================MENU====================*/
 .menu {
   display: flex;
-  flex: 0.1;
+  flex: 1;
   flex-direction: row;
   justify-content: flex-start;
   text-align: center;
@@ -79,14 +98,14 @@ body {
 
 .menu-item {
   display: flex;
-  font-family: 'Ubuntu', Futura, sans-serif;
+/*  font-family: 'Ubuntu', Futura, sans-serif;*/
   font-weight: bold;
   background: none;
   border: none;
   font-size: 20px;
   padding: 0 3% 3% 3%;
-  color: white;
-  text-shadow: 2px 2px 1px grey;
+  color: #1F2833;
+  text-shadow: 1px 1px 1px grey;
 }
 
 .menu-item:hover {
@@ -98,3 +117,107 @@ body {
   color: white;
   text-shadow: 1px 1px 1px grey;
 }
+
+/*====================ABOUT====================*/
+
+.about {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  /*height: 400px;*/
+  padding-top: 10%;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, white, #D1E8E2 25%, #D1E8E2 50%, white 100%);
+  flex: 3;
+  border-right: 5px solid #1F2833;
+  /*border-top: 5px solid #1F2833;*/
+  /*border: 2px solid black;*/
+}
+
+.about-photo img {
+  display: flex;
+  border-radius: 50%;
+  margin: 5% auto;
+}
+
+.about-content {
+  margin: 5% 10%;
+  color: #1F2833;
+  font-size: 20px;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20%;
+}
+
+.about-tags {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  /*border: 2px solid black;*/
+  display: block;
+  margin: auto;
+}
+
+.about-tags img {
+  width: 90px;
+  margin: 3%;
+  /*border: 1px solid black;*/
+  /*height: auto;*/
+}
+
+
+/*====================ANIMATIONS====================*/
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform:     translateY(0);
+    transform:         translateY(0)
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform:     translateY(-30px);
+    transform:         translateY(-30px)
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform:     translateY(-15px);
+    transform:         translateY(-15px)
+  }
+}
+.bounce {  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.bounce:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
