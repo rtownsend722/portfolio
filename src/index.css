@@ -15,12 +15,6 @@ body {
 /*=====================LEAD=====================*/
 
 .lead-body {
-  display: flex;
-  flex-direction: column;
-  height: 600px;
-}
-
-.lead-header {
   background: url('./images/mountain.jpg');
   background-color: #D1E8E2;
   background-blend-mode: overlay;
@@ -28,6 +22,12 @@ body {
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+.lead-header {
   min-height: 60%;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@ body {
 }
 
 .lead-image img {
-  margin-top: 10%;
+  margin-top: 5% 0;
   height: 100px;
   width: 150px;
 }
@@ -56,7 +56,7 @@ body {
   /*color: #1B2024;*/
   font-color: white;
   text-shadow: 1px 2px 2px grey;
-  margin: 5% auto 10% auto;
+  margin: 10% auto 10% auto;
 }
 
 .lead-content {
@@ -174,11 +174,82 @@ body {
 
 /*====================PROJECTS====================*/
 
-.projects-main {
-  border: 2px solid black;
-  margin: 10% auto;
-  width: 100%;
+.project-container {
+  margin-top: 10%;
+  border-top: 3px solid #1F2833;
+  background: linear-gradient(to top, white, #D1E8E2 25%, #D1E8E2 30%, white 100%);
 }
+
+.projects-main {
+  display: flex;
+  justify-content: space-between;
+  /*background-color: #1F2833;*/
+  /*border: 3px solid black;*/
+  margin: 5% auto;
+  width: 80%;
+}
+
+.project-header {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 10%;
+  width: 50%;
+  font-family: 'Inconsolate', sans-serif;
+  color: black;
+  /*border: 2px solid black;*/
+  font-size: 65px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  color: #1F2833;
+}
+
+.title {
+  display: flex;
+  align-self: flex-start;
+  padding: 1%;
+  font-size: 20px;
+  /*border: 2px solid red;*/
+}
+
+.text-description,
+.tech {
+  display: flex;
+  align-self: flex-start;
+  padding: 3%;
+  font-size: 15px; 
+  /*border: 2px solid green;*/
+}
+
+.project video {
+  align-self: bottom;
+  display: flex;
+  height: auto;
+  margin: 0 auto;
+  border: 2px solid #1F2833;
+  /*color: black;*/
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*border: 2px solid red;*/
+}
+
+.prev-button {
+  display: flex;
+  border-radius: 50%;
+  min-height: 75px;
+  /*width: 20%;*/
+  /*border: 2px solid black;*/
+}
+
+
 
 
 /*====================ANIMATIONS====================*/

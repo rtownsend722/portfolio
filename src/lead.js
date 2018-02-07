@@ -14,7 +14,7 @@ class Lead extends React.Component {
   };
 
   handleClick() {
-    document.querySelector('.icons').scrollIntoView({
+    document.querySelector('.about').scrollIntoView({
       behavior: 'smooth'
     });
   };
@@ -34,7 +34,8 @@ class Lead extends React.Component {
         <div>
           <About/>
         </div>
-        <div>
+        <div className="project-container">
+          <div className="project-header">Projects</div>
           <Projects/>
         </div>
       </div>
