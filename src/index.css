@@ -172,6 +172,14 @@ body {
   /*height: auto;*/
 }
 
+/*====================PROJECTS====================*/
+
+.projects-main {
+  border: 2px solid black;
+  margin: 10% auto;
+  width: 100%;
+}
+
 
 /*====================ANIMATIONS====================*/
 
