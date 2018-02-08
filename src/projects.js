@@ -55,7 +55,7 @@ class Projects extends React.Component {
             <div className="text">
               <div className="title">Chattermon</div>
               <div className="text-description">Terminal based 2 player Pokemon battle game with integrated live chat.</div>
-              <div className="tech">Build with React, Express on NodeJS, Socket.io, PassportJS, & PostgreSQL on Sequelize.</div>
+              <div className="tech">Built with React, Express on NodeJS, Socket.io, PassportJS, & PostgreSQL on Sequelize.</div>
             </div>
           </div>
               
@@ -84,7 +84,11 @@ class Projects extends React.Component {
             <video ref="vid" autoplay="autoPlay" loop="loop" width="600" height="500">
               <source src={require("./videos/sesame.mp4")} type="video/mp4"></source>
             </video>
-            <div className="text">Sesa.me</div>
+            <div className="text">
+              <div className="title">Sesa.me</div>
+              <div className="text-description">Discreet help-request service for victims of domestic violence and human trafficking.</div>
+              <div className="tech">Built with React, Express on NodeJS, and MongoDB on Sequelize.</div>
+            </div>
           </div>
 
           <a className="button-container" 
@@ -111,7 +115,11 @@ class Projects extends React.Component {
             <video ref="vid" autoplay="autoPlay" loop="loop" width="600" height="500">
               <source src={require("./videos/lively.mp4")} type="video/mp4"></source>
             </video>
-            <div className="text">Live.ly</div>
+            <div className="text">
+              <div className="title">Live.ly</div>
+              <div className="text-description">Personalize live-music event aggregator.</div>
+              <div className="tech">Built with AngularJS, Express on NodeJS, and MongoDB on Sequelize.</div>
+            </div>
           </div> 
 
           <a className="button-container" 
