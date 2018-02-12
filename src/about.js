@@ -9,6 +9,7 @@ class About extends React.Component {
   render() {
     return (
       <div>
+        <div className="about-title">About Me</div>
         <div className="about">
           <div className="about-photo">
             <img src={require("./images/me.jpg")} with="300px" height="300px"d></img>
@@ -20,11 +21,6 @@ class About extends React.Component {
               <p>I really enjoy levering my knowledge of the full stack to create pleasant user experiences backed by performant server-side architecture.</p>
               <p>When I'm not coding, you can find me enjoying the great outdoors, listening to a podcast, reading, or searching for my new favorite coffee shop. Drop me a line if you'd like to talk!</p>
             </div>
-            { /*<div className="icons">
-              <span><a href="https://www.linkedin.com/in/rtownsend722/"><img src={require("./images/linkedin.svg")}></img></a></span>
-              <span><a href="https://github.com/rtownsend722"><img src={require("./images/github.svg")}></img></a></span>
-              <span><a href="mailto:rebecca.townsend722@gmail.com"><img src={require("./images/send.svg")}></img></a></span>
-            </div> */}
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ class ProjectBasic extends React.Component {
   render() {
     return (
       <div>
-        <div className="projects-title">Recent Projects: Samples of my work from the past year.</div>
+        <div className="projects-title">Samples of my most recent work.</div>
 
       <div className="projects-container">
 

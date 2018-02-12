@@ -6,11 +6,36 @@ class Menu extends React.Component {
     super(props);
   }
 
+  handleProjectClick() {
+    document.querySelector('.projects-title').scrollIntoView({
+      block: 'start',
+      inline: 'nearest',
+      behavior: 'smooth'
+    });
+  };
+
+  handleAboutClick() {
+    document.querySelector('.about-title').scrollIntoView({
+      block: 'start',
+      inline: 'nearest',
+      behavior: 'smooth'
+    });
+  };
+
+  handleContactClick() {
+    document.querySelector('.footer').scrollIntoView({
+      block: 'start',
+      inline: 'nearest',
+      behavior: 'smooth'
+    });
+  };
+
   render() {
     return (
       <div className='menu'>
-        <button className='menu-item'>Projects</button>
-        <button className='menu-item'>About Me</button>
+        <button onClick={this.handleProjectClick.bind(this)}className='menu-item go-projects'>Projects</button>
+        <button onClick={this.handleAboutClick.bind(this)} className='menu-item go-about'>About Me</button>
+        <button onClick={this.handleContactClick.bind(this)} className='menu-item go-contact'>Contact</button>
       </div>
     );
   }

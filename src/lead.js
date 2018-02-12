@@ -35,6 +35,13 @@ class Lead extends React.Component {
           <Tech/>
           <ProjectBasic/>
         </div>
+        <div className="footer">
+          <div className="icons">
+            <div className="icon"><a href="https://www.linkedin.com/in/rtownsend722/"><img src={require("./images/linkedin.svg")}></img></a></div>
+            <div className="icon"><a href="https://github.com/rtownsend722"><img src={require("./images/github.svg")}></img></a></div>
+            <div className="icon"><a href="mailto:rebecca.townsend722@gmail.com"><img src={require("./images/send.svg")}></img></a></div>
+          </div>
+        </div>
       </div>
     );
   } 

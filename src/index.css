@@ -59,7 +59,7 @@ body {
   font-weight: bold;
   color: black;
   /*text-shadow: 1px 2px 2px grey;*/
-  margin: 2% auto 0% auto;
+  margin: 4% auto 0% auto;
 }
 
 .lead-content {
@@ -113,6 +113,16 @@ body {
 
 .menu-item:hover {
   font-size: 30px;
+  cursor: pointer;
+}
+
+button:focus,
+button:active:focus{
+    outline:none;
+}
+
+button:focus{
+    text-decoration:none;
 }
 
 .menu a {
@@ -124,8 +134,10 @@ body {
 /*====================ABOUT====================*/
 
 .about-title {
+  width: 30%;
+  background-color: #EEE0CB;
   font-size: 40px;
-  color: #A37B73;
+  font-weight: bold;
   margin: 5% auto;
   text-align: center;
 }
@@ -162,11 +174,6 @@ body {
   font-size: 20px;
 }
 
-.icons{
-  display: flex;
-  justify-content: space-around;
-  margin: 5% 20% 0 20% ;
-}
 
 
 /*====================TECH ICONS====================*/
@@ -239,9 +246,9 @@ body {
   font-weight: bold;
   text-align: center;
   width: 65%;
+  background-color: #BFD7EA;
   margin: 7.5% auto 0 auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 0.5% 0;
   font-size: 30px;
   color: black;
 }
@@ -291,120 +298,34 @@ body {
 }
 
 
-/*==============================================*/
 
-/*.project-container {
+/*======================FOOTER======================*/
+.footer {
   margin-top: 10%;
-  border-top: 3px solid #1F2833;
-  background: linear-gradient(to top, white, #D1E8E2 25%, #D1E8E2 30%, white 100%);
-}*/
-
-/*.projects-main {*/
-  /*display: flex;*/
-  /*justify-content: space-between;*/
-  /*background-color: #1F2833;*/
-  /*border: 3px solid black;*/
-/*  margin: 5% auto;
-  width: 80%;
-}*/
-
-/*.project-header {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding-top: 10%;
-  width: 50%;
-  font-family: 'Inconsolate', sans-serif;
-  color: black;
-  border: 2px solid black;
-  font-size: 65px;
+  background-color: #EEE0CB;
+  width: 100vw;
+  margin-bottom: 0;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  bottom: 0%;
+  left: 50%;
+  right: 50%;
 }
 
-.text {
+.icons{
   display: flex;
-  flex-direction: column;
-  height: 100px;
-  color: #1F2833;
-}
-*/
-/*.title {
-  display: flex;
-  align-self: flex-start;
-  padding: 1%;
-  font-size: 20px;
-  border: 2px solid red;
-}*/
-
-/*.text-description,
-.tech {
-  display: flex;
-  align-self: flex-start;
-  padding: 3%;
-  font-size: 15px; 
-  border: 2px solid green;
-}*/
-
-/*.project video {
-  align-self: bottom;
-  display: flex;
-  height: auto;
-  margin: 0 auto;
-  border: 2px solid #1F2833;
-  color: black;
-}*/
-
-/*.button-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 2px solid red;
+  padding: 2% 0;
+  justify-content: space-around;
+  margin: 0 20% 0 20% ;
 }
 
-.prev-button {
-  display: flex;
-  border-radius: 50%;
-  min-height: 75px;
-  width: 20%;
-  border: 2px solid black;
-}*/
-
-
-
-
-/*====================ANIMATIONS====================*/
-
-@keyframes bounce {
-  0%, 100%, 20%, 50%, 80% {
-    -webkit-transform: translateY(0);
-    -ms-transform:     translateY(0);
-    transform:         translateY(0)
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-    -ms-transform:     translateY(-30px);
-    transform:         translateY(-30px)
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-    -ms-transform:     translateY(-15px);
-    transform:         translateY(-15px)
-  }
+.icon:hover {
+  transform: scale(1.5, 1.5);
 }
-.bounce {  
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-}
-.bounce:hover {
-  cursor: pointer;
-  animation-name: bounce;
-  -moz-animation-name: bounce;
-}
+
+
+
 
 
 
