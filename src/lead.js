@@ -1,7 +1,9 @@
 import React from 'react';
 import Menu from './menu';
 import About from './about';
-import Projects from './projects';
+// import Projects from './projects';
+import ProjectBasic from './projectsBasic.js'
+import Tech from './tech';
 import './index.css';
 import './images/down.png';
 
@@ -27,16 +29,11 @@ class Lead extends React.Component {
           <div className='lead-header'>
             <div className='name'>Hi, I'm Rebecca Townsend.</div>
           </div>
-          <div className='lead-image bounce'>
-            <img src={require("./images/down.png")} onClick={this.handleClick}></img>
-          </div>
         </div>
         <div>
           <About/>
-        </div>
-        <div className="project-container">
-          <div className="project-header">Projects</div>
-          <Projects/>
+          <Tech/>
+          <ProjectBasic/>
         </div>
       </div>
     );

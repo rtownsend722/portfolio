@@ -7,7 +7,6 @@ body {
   background-color: white;
   font-family: 'Roboto', Futura, sans-serif;
   font-size: 14px;
-  color: white;
 }
 
 /*==============COMPONENT STYLES==============*/
@@ -17,14 +16,19 @@ body {
 .lead-body {
   background: url('./images/mountain.jpg');
   background-color: #D1E8E2;
-  background-blend-mode: overlay;
   background-size: cover;
-  background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position: bottom;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 500px;
+  width: 100vw;
+  margin-top: -10px;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
 }
 
 .lead-header {
@@ -53,10 +57,9 @@ body {
 .name {
   font-size: 60px;
   font-weight: bold;
-  /*color: #1B2024;*/
-  font-color: white;
-  text-shadow: 1px 2px 2px grey;
-  margin: 10% auto 10% auto;
+  color: black;
+  /*text-shadow: 1px 2px 2px grey;*/
+  margin: 2% auto 0% auto;
 }
 
 .lead-content {
@@ -91,7 +94,7 @@ body {
   display: flex;
   flex: 1;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   text-align: center;
   /*border: 2px solid red;*/
 }
@@ -103,9 +106,9 @@ body {
   background: none;
   border: none;
   font-size: 20px;
-  padding: 0 3% 3% 3%;
-  color: #1F2833;
-  text-shadow: 1px 1px 1px grey;
+  padding: 0.5px 3% 0% 0%;
+  color: black;
+  /*text-shadow: 1px 1px 1px grey;*/
 }
 
 .menu-item:hover {
@@ -120,32 +123,41 @@ body {
 
 /*====================ABOUT====================*/
 
+.about-title {
+  font-size: 40px;
+  color: #A37B73;
+  margin: 5% auto;
+  text-align: center;
+}
+
 .about {
   display: flex;
   flex-direction: row;
   text-align: center;
+  align-items: center;
+  margin-top: 5%;
   /*height: 400px;*/
-  padding-top: 10%;
-}
-
-.about-main {
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(to top, white, #D1E8E2 25%, #D1E8E2 50%, white 100%);
-  flex: 3;
-  border-right: 5px solid #1F2833;
-  /*border-top: 5px solid #1F2833;*/
-  /*border: 2px solid black;*/
+  /*padding-top: 1%;*/
 }
 
 .about-photo img {
   display: flex;
   border-radius: 50%;
-  margin: 5% auto;
+  margin: 0 10%;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  margin: 0 10%;
+  /*border-right: 5px solid #1F2833;*/
+  /*border-top: 5px solid #1F2833;*/
+  /*border: 2px solid black;*/
 }
 
 .about-content {
-  margin: 5% 10%;
+  /*margin: 5% 10%;*/
   color: #1F2833;
   font-size: 20px;
 }
@@ -153,43 +165,150 @@ body {
 .icons{
   display: flex;
   justify-content: space-around;
-  margin: 0 20%;
+  margin: 5% 20% 0 20% ;
+}
+
+
+/*====================TECH ICONS====================*/
+
+.about-tags-container {
+  background-color: #EEE0CB;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-top: 10%;
+}
+
+.tech-left {
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 20px;
+  margin-left: 5%;
+  color: black;
+}
+
+.tech-right {
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 20px;
+  text-align: right;
+  margin-right: 5%;
+  color: black;
 }
 
 .about-tags {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-  /*border: 2px solid black;*/
-  display: block;
+  justify-content: space-around;
+  width: 75%;
   margin: auto;
+  /*align-items: flex-start;*/
+  /*border: 2px solid black;*/
 }
 
 .about-tags img {
-  width: 90px;
-  margin: 3%;
+  display: flex;
+  width: 60px;
+  margin: 2% 2.5%;
   /*border: 1px solid black;*/
-  /*height: auto;*/
+  height: 60px;
+}
+
+.about-tags::before, .about-tags::after {
+  content: '';
+  order: 1;
+  width: 100%;
+}
+
+.about-tags img:nth-child(n + 7) {
+  order: 1;
 }
 
 /*====================PROJECTS====================*/
 
-.project-container {
+.projects-title {
+  /*font-family: 'Comfortaa', cursive;*/
+  font-weight: bold;
+  text-align: center;
+  width: 65%;
+  margin: 7.5% auto 0 auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 30px;
+  color: black;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.project video{
+  margin: -7% auto -10% auto;
+}
+
+.media {
+  display: flex;
+  flex: 2;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 5%;
+}
+
+.title {
+  margin-bottom: 10%;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.text-description {
+  font-size: 18px;
+  padding-bottom: 5%;
+}
+
+.tech {
+  font-size: 18px;
+}
+
+
+/*==============================================*/
+
+/*.project-container {
   margin-top: 10%;
   border-top: 3px solid #1F2833;
   background: linear-gradient(to top, white, #D1E8E2 25%, #D1E8E2 30%, white 100%);
-}
+}*/
 
-.projects-main {
-  display: flex;
-  justify-content: space-between;
+/*.projects-main {*/
+  /*display: flex;*/
+  /*justify-content: space-between;*/
   /*background-color: #1F2833;*/
   /*border: 3px solid black;*/
-  margin: 5% auto;
+/*  margin: 5% auto;
   width: 80%;
-}
+}*/
 
-.project-header {
+/*.project-header {
   display: flex;
   justify-content: center;
   margin: auto;
@@ -197,7 +316,7 @@ body {
   width: 50%;
   font-family: 'Inconsolate', sans-serif;
   color: black;
-  /*border: 2px solid black;*/
+  border: 2px solid black;
   font-size: 65px;
 }
 
@@ -207,47 +326,47 @@ body {
   height: 100px;
   color: #1F2833;
 }
-
-.title {
+*/
+/*.title {
   display: flex;
   align-self: flex-start;
   padding: 1%;
   font-size: 20px;
-  /*border: 2px solid red;*/
-}
+  border: 2px solid red;
+}*/
 
-.text-description,
+/*.text-description,
 .tech {
   display: flex;
   align-self: flex-start;
   padding: 3%;
   font-size: 15px; 
-  /*border: 2px solid green;*/
-}
+  border: 2px solid green;
+}*/
 
-.project video {
+/*.project video {
   align-self: bottom;
   display: flex;
   height: auto;
   margin: 0 auto;
   border: 2px solid #1F2833;
-  /*color: black;*/
-}
+  color: black;
+}*/
 
-.button-container {
+/*.button-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*border: 2px solid red;*/
+  border: 2px solid red;
 }
 
 .prev-button {
   display: flex;
   border-radius: 50%;
   min-height: 75px;
-  /*width: 20%;*/
-  /*border: 2px solid black;*/
-}
+  width: 20%;
+  border: 2px solid black;
+}*/
 
 
 
