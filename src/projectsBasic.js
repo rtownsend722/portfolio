@@ -11,6 +11,7 @@ class ProjectBasic extends React.Component {
     return (
       <div>
         <div className="projects-title">Samples of my most recent work.</div>
+        <div className="projects-title-alt">Descriptions of my most recent work. View this page on a wider device for more info!</div>
 
       <div className="projects-container">
 

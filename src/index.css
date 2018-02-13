@@ -89,6 +89,7 @@ body {
   color: #1B2024;
 }
 */
+
 /*====================MENU====================*/
 .menu {
   display: flex;
@@ -241,6 +242,12 @@ button:focus{
 
 /*====================PROJECTS====================*/
 
+@media only screen and (min-width: 481px){
+  .projects-title-alt {
+    display: none;
+  }
+}
+
 .projects-title {
   /*font-family: 'Comfortaa', cursive;*/
   font-weight: bold;
@@ -327,6 +334,109 @@ button:focus{
 
 
 
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+  .lead-body {
+    height: 200px; 
+  }
+
+  .name {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    /*text-shadow: 1px 2px 2px grey;*/
+    margin: 4% auto 0% auto;
+  }
+
+  .menu {
+    display: none;
+  }
+
+
+  .about-title {
+    font-size: 25px;
+    margin: 7.5% auto;
+  }
+
+  .about {
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .about-photo img {
+    height: 200px;
+    margin: 0 3%;
+  }
+
+  .about-main {
+    margin: 0 3%;
+  }
+
+  .about-content {
+    font-size: 15px;
+  }
+
+  .about-tags-container {
+    background-color: #EEE0CB;
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-top: 10%;
+  }
+
+  .tech-left {
+    font-size: 15px;
+    margin-left: 2%;
+  }
+
+  .tech-right {
+    font-size: 15px;
+    margin-right: 2%;
+  }
+
+  .about-tags img {
+    width: 25px;
+    margin: 1% 2%;
+    height: 50px;
+  }
+
+  .projects-title {
+    display: none;
+  }
+
+  .projects-title-alt {
+    background-color: #BFD7EA;
+    width: 80%;
+    margin: 10% auto 0 auto;
+    font-size: 25px;
+  }
+
+  .media {
+    display: none;
+  }
+
+  .text {
+    margin: 0 2%;
+  }
+
+  .title {
+    font-size: 25px;
+    margin: 2% auto;
+  }
+
+  .text-description {
+    font-size: 15px;
+  }
+
+  .tech {
+    font-size: 15px;
+  }
+
+
+}
 
 
 
