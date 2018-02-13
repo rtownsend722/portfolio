@@ -6,10 +6,18 @@ class About extends React.Component {
     super(props);
   }
 
+  handleAboutClick() {
+    document.querySelector('.about-title').scrollIntoView({
+      block: 'start',
+      inline: 'nearest',
+      behavior: 'smooth'
+    });
+  };
+
   render() {
     return (
       <div>
-        <div className="about-title">About Me</div>
+        <div onClick={this.handleAboutClick.bind(this)} className="about-title">About Me</div>
         <div className="about">
           <div className="about-photo">
             <img src={require("./images/me.jpg")} with="300px" height="300px"d></img>

@@ -95,7 +95,7 @@ body {
   display: flex;
   flex: 1;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   text-align: center;
   /*border: 2px solid red;*/
 }
@@ -106,14 +106,14 @@ body {
   font-weight: bold;
   background: none;
   border: none;
-  font-size: 20px;
-  padding: 0.5px 3% 0% 0%;
+  font-size: 18px;
+  padding: 0 0 0 1.5%;
   color: black;
   /*text-shadow: 1px 1px 1px grey;*/
 }
 
 .menu-item:hover {
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -128,8 +128,7 @@ button:focus{
 
 .menu a {
   text-decoration: none;
-  color: white;
-  text-shadow: 1px 1px 1px grey;
+  color: black;
 }
 
 /*====================ABOUT====================*/
@@ -141,6 +140,11 @@ button:focus{
   font-weight: bold;
   margin: 5% auto;
   text-align: center;
+}
+
+.about-title:hover {
+  font-size: 45px;
+  cursor: pointer;
 }
 
 .about {
@@ -258,6 +262,11 @@ button:focus{
   padding: 0.5% 0;
   font-size: 30px;
   color: black;
+}
+
+.projects-title:hover {
+  font-size: 35px;
+  cursor: pointer;
 }
 
 .projects-container {

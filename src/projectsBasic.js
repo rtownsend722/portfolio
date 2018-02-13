@@ -7,10 +7,18 @@ class ProjectBasic extends React.Component {
 
   }
 
+  handleProjectClick() {
+    document.querySelector('.projects-title').scrollIntoView({
+      block: 'start',
+      inline: 'nearest',
+      behavior: 'smooth'
+    });
+  };
+
   render() {
     return (
       <div>
-        <div className="projects-title">Samples of my most recent work.</div>
+        <div onClick={this.handleProjectClick.bind(this)} className="projects-title">Samples of my most recent work.</div>
         <div className="projects-title-alt">Descriptions of my most recent work. View this page on a wider device for more info!</div>
 
       <div className="projects-container">
