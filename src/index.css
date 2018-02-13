@@ -352,7 +352,7 @@ button:focus{
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 480px){
+@media only screen and (min-width: 320px) and (max-width: 600px){
 
   .lead-body {
     height: 200px; 
@@ -458,6 +458,106 @@ button:focus{
   }
 
 
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .name {
+    font-size: 30px;
+    margin-top: 10%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .about-title {
+    font-size: 25px;
+    margin: 7.5% auto;
+  }
+
+  .about {
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .about-photo img {
+    height: 200px;
+    margin: 0 3%;
+  }
+
+  .about-main {
+    margin: 0 3%;
+  }
+
+  .about-content {
+    font-size: 15px;
+  }
+
+  .about-tags-container {
+    background-color: #EEE0CB;
+    width: 100vw;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-top: 10%;
+  }
+
+  .tech-left {
+    font-size: 15px;
+    margin-left: 2%;
+  }
+
+  .tech-right {
+    font-size: 15px;
+    margin-right: 2%;
+  }
+
+  .about-tags img {
+    width: 40px;
+    margin: 1% 2%;
+    height: 50px;
+  }
+
+  .projects-title {
+    background-color: #BFD7EA;
+    width: 80%;
+    margin: 10% auto 0 auto;
+    font-size: 25px;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  .project:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+
+  .text {
+    margin: 0 2%;
+  }
+
+  .title {
+    font-size: 25px;
+    margin: 2% auto;
+  }
+
+  .text-description {
+    font-size: 15px;
+  }
+
+  .tech {
+    font-size: 15px;
+  }
+
+  .contact-container {
+    display: none;
+  }
 }
 
 
