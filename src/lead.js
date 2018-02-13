@@ -4,6 +4,7 @@ import About from './about';
 // import Projects from './projects';
 import ProjectBasic from './projectsBasic.js'
 import Tech from './tech';
+import Contact from './contact.js';
 import './index.css';
 import './images/down.png';
 
@@ -36,6 +37,10 @@ class Lead extends React.Component {
           <ProjectBasic/>
         </div>
         <div className="footer">
+          <div className="contact-container">
+            <div className='contact-me'>Contact Me</div>
+            <img src={require("./images/chevright.svg")}></img>
+          </div>
           <div className="icons">
             <div className="icon"><a href="https://www.linkedin.com/in/rtownsend722/"><img src={require("./images/linkedin.svg")}></img></a></div>
             <div className="icon"><a href="https://github.com/rtownsend722"><img src={require("./images/github.svg")}></img></a></div>
