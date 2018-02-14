@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './index.css';
 
-class Menu extends React.Component {
+export default class Menu extends Component {
   constructor(props) {
     super(props);
   }
@@ -31,10 +31,6 @@ class Menu extends React.Component {
   };
 
 
-  handleResumeClick() {
-
-  };
-
   render() {
     return (
       <div className='menu'>
@@ -47,4 +43,3 @@ class Menu extends React.Component {
   }
 }
 
-export default Menu;

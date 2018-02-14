@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './index.css';
 
-class Tech extends React.Component {
+export default class Tech extends Component {
   constructor(props) {
     super(props);
 
@@ -34,5 +34,3 @@ class Tech extends React.Component {
     );
   }
 }
-
-export default Tech;

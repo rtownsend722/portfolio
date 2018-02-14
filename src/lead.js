@@ -1,15 +1,12 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Menu from './menu';
 import About from './about';
-// import Projects from './projects';
 import ProjectBasic from './projectsBasic.js'
 import Tech from './tech';
-import Contact from './contact.js';
 import './index.css';
-import './images/down.png';
 
 
-class Lead extends React.Component {
+export default class Lead extends Component {
   constructor(props) {
     super(props);
 
@@ -52,4 +49,3 @@ class Lead extends React.Component {
   } 
 }
 
-export default Lead;
