@@ -70,7 +70,7 @@ export default class ProjectBasic extends Component {
           </div>
           <div className="text">
             <div className="title">Force Visualization</div>
-            <div className="text-description">Dynamic visualization of a social network.</div>
+            <div className="text-description">Dynamic visualization of relationships within a social network.</div>
             <div className="tech">Built with: D3, SVG, Express, and NodeJS.</div>
           </div>
         </div>
