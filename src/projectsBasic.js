@@ -62,6 +62,19 @@ export default class ProjectBasic extends Component {
           </div>
         </div> 
 
+        <div className="project">
+          <div className="media">
+            <video ref="vid" autoplay="autoPlay" loop="loop" width="600" height="500">
+              <source src={require("./videos/force.mp4")} type="video/mp4"></source>
+            </video>
+          </div>
+          <div className="text">
+            <div className="title">Force Visualization</div>
+            <div className="text-description">Dynamic visualization of a social network.</div>
+            <div className="tech">Built with: D3, SVG, Express, and NodeJS.</div>
+          </div>
+        </div>
+
       </div>
 
     </div>
